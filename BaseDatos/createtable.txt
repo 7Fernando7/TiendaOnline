@@ -1,0 +1,16 @@
+
+create table pedidos(id_pedidos int(10) primary key auto_increment, numeroPedido int(20), fechaPedido date, fechaEntrega date NOT NULL, cancelado boolean NOT NULL DEFAULT 0, usuario_id int(10), direcciones_id int(10), tarjeta_id int(10));
+
+create table direcciones (id_direcciones int(10) primary key auto_increment, calle varchar(30), numero int(4), piso varchar(5), ciudad varchar(20), provincia varchar(20),codigopostal int(5), usuario_id int(10));
+
+create table usuarios(id_usuarios int(10) primary key auto_increment, nombre varchar(30), apellidos varchar(30), telefono int(12), documento char(12), email varchar(90), password char(20), admin boolean NOT NULL DEFAULT 0);
+
+create table newpass(id int(10) primary key auto_increment, token int(6), expiracion datetime NOT NULL, usuario_id int(10));
+
+create table producto(id_producto int(10) primary key auto_increment, nombre varchar(30), titulo varchar(100), precio DECIMAL(5,2), descripcion varchar(700), imagen_producto varchar(30), cantidad int(6)) categorias_id int(10));
+
+create table categorias(id_categorias int(10) primary key auto_increment, nombre_categoria varchar(30));
+
+create table pedidos_productos (id_pedidos_Productos int(10) primary key auto_increment, cantidad int(10), pedidos_id int(10), productos_id int(10));
+
+create table tarjetas (id_tarjeta int(10) primary key auto_increment NOT NULL, nombreTitular varchar(40) NOT NULL, numeroTarjeta varchar(16) NOT NULL, fechaCaducidad varchar(5) NOT NULL, codigoSeguridad int(3) NOT NULL, usuario_id int(10));
