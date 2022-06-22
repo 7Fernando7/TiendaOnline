@@ -18,7 +18,7 @@ include ("../config/sesiones.php");
         <!--Hago un contenedor para todo el proyecto-->
         <div class="container">
             <!--Incluyo el heder haciendo un include de un archivo externo-->
-            <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/controlador/header.php"); ?>
+            <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/controlador/header.php"); ?>
             <div class="contenedorGeneralInfo">
                 <h3>Mis pedidos</h3>
                 <?php
@@ -70,7 +70,7 @@ include ("../config/sesiones.php");
             </div>
         </div>
         <!--Incluyo el Footer con informaciones pertinentes a la empresa haciendo un include de un archivo externo-->
-        <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/vista/footer.php"); ?>
+        <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/vista/footer.php"); ?>
         <script>
         /** Función que se ejecuta una vez cargada la página */
         window.onload=function() {

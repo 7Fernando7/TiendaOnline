@@ -4,7 +4,7 @@
 require_once(__DIR__."/../modelo/modeloMetodosUsuarios.php");
 //Hago una lógica que si esta logueado y NO es administrador no podrá hacer está función te redirecciona para el index.php
 if($logueado && !$administrador) {
-  header("location:/dashboard/TiendaOnlineTFG/index.php");
+  header("location:/dashboard/TiendaOnline/index.php");
   }//Caso contratio te redirecciona a la vista borrarUsuariosBD.php
     $borrado = new modeloUsuarios();
     require_once(__DIR__."/../vista/borrarUsuariosBD.php");

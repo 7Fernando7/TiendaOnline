@@ -1,6 +1,6 @@
 <?php
-require_once ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/config/conexion.php");  
-include($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/config/sesiones.php");
+require_once ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/config/conexion.php");  
+include($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/config/sesiones.php");
 class modeloProductos {
     //Cre un conector que me permitirá llamar automáticamente a esta función cuando cree un objeto de una clase.
     public function __construct() {

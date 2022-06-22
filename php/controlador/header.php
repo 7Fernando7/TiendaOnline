@@ -11,7 +11,7 @@
     //Hago una lógica para el buscador
     if(isset($_POST['submit']) && isset($_POST['search'])) {
         $search = $_POST['search'];
-        header("location:/dashboard/TiendaOnlineTFG/php/controlador/productosBuscador.php?search=$search");
+        header("location:/dashboard/TiendaOnline/php/controlador/productosBuscador.php?search=$search");
     }
     require_once(__DIR__."/../vista/header.php");
 ?>

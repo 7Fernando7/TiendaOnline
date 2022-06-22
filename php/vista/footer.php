@@ -12,10 +12,10 @@
     <section>
       <h5 class="otherInformations">Formas de Pago</h5>
       <div class="footerImagen">
-        <img src="/dashboard/TiendaOnlineTFG/img/Visa.png" alt="visa" />
-        <img src="/dashboard/TiendaOnlineTFG/img/masterCard.jpg" alt="mastercard" />
-        <img src="/dashboard/TiendaOnlineTFG/img/american.jpg" alt="american" />
-        <img src="/dashboard/TiendaOnlineTFG/img/payPal.jpg" alt="paypal" />
+        <img src="/dashboard/TiendaOnline/img/Visa.png" alt="visa" />
+        <img src="/dashboard/TiendaOnline/img/masterCard.jpg" alt="mastercard" />
+        <img src="/dashboard/TiendaOnline/img/american.jpg" alt="american" />
+        <img src="/dashboard/TiendaOnline/img/payPal.jpg" alt="paypal" />
       </div>
     </section>
     <section>

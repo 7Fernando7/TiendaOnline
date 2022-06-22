@@ -5,7 +5,7 @@
     require 'src/Exception.php';
     require 'src/PHPMailer.php';
     require 'src/SMTP.php';
-    require_once ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/config/conexion.php");
+    require_once ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/config/conexion.php");
   class enviarEmail {
     //Cre un conector que me permitirá llamar automáticamente a esta función cuando cree un objeto de una clase.
     public function __construct() {
@@ -42,7 +42,7 @@
             $mail->Subject = "Tu pedido ha sido realizado con exito.";
             $mail->Body    = "<b>Estamos preparando tu pedido con número $numeroPedido.</b></br>
             El pedido lo recibirás el dia $fechaEntrega.</br>
-            Puedes ver el estado de tu pedido en http://localhost/dashboard/TiendaOnlineTFG/php/controlador/buscarPedidos.php</br>
+            Puedes ver el estado de tu pedido en http://localhost/dashboard/TiendaOnline/php/controlador/buscarPedidos.php</br>
             Muchas gracias!";
             $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
@@ -77,7 +77,7 @@
         $mail->AddCC("cc-recipient-email", "cc-recipient-name");
         $mail->Subject = "Tu petición ha sido atendidada con exito.";
         $content = "<b>El pedido con número $numero_pedido ha si cancelado.</b></br>
-        Puedes ver el estado de tu pedido en http://localhost/dashboard/TiendaOnlineTFG/php/controlador/buscarPedidos.php</br>
+        Puedes ver el estado de tu pedido en http://localhost/dashboard/TiendaOnline/php/controlador/buscarPedidos.php</br>
         Muchas gracias!";
 
         $mail->MsgHTML($content); 
@@ -106,7 +106,7 @@
         $mail->AddCC("cc-recipient-email", "cc-recipient-name");
         $mail->Subject = "Tu registro ha sido realizado con exito.";
         $content = "<b>Hola $nombre, bienvenido a Barbara Boutique de Moda, es un placer tenerlo como cliente.</b></br>
-        Puedes acceder a tu perfil a través del enlace http://localhost/dashboard/TiendaOnlineTFG/php/controlador/loginUsuario.php</br>
+        Puedes acceder a tu perfil a través del enlace http://localhost/dashboard/TiendaOnline/php/controlador/loginUsuario.php</br>
         Muchas gracias!";
 
         $mail->MsgHTML($content); 
@@ -158,7 +158,7 @@
                 $mail->AddCC("cc-recipient-email", "cc-recipient-name");
                 $mail->Subject = "Restablece tu contraseña!";
                 $content = "<b>¿Olvidaste tu contraseña? Puede pasar no te preocupes!.</b></br>
-                http://localhost/dashboard/TiendaOnlineTFG/php/controlador/updatePass.php?id=".$token;
+                http://localhost/dashboard/TiendaOnline/php/controlador/updatePass.php?id=".$token;
     
                 $mail->MsgHTML($content); 
                 if(!$mail->Send()) {

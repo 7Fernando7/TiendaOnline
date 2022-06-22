@@ -16,7 +16,7 @@ include ("../config/sesiones.php");
     <!--Hago un contenedor para todo el proyecto-->
     <div class="container">
       <!--Encabezado con barra superior y menu-->
-      <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/controlador/header.php"); ?>
+      <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/controlador/header.php"); ?>
       <!--Apartado con todos los productos  -->
       <section>
         <div class="section1">
@@ -77,7 +77,7 @@ include ("../config/sesiones.php");
           <!--Hago un apartado donde se va a cargar los productos de forma aleatoria-->
           <h2>Productos elegidos para ti</h2>
           <section class="productosRandom" >
-            <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/controlador/productosRandom.php"); 
+            <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/controlador/productosRandom.php"); 
             foreach($productosRandom as $dato) {
               $ExisteProductoEnCesta = isset($_SESSION['cesta'][$dato->id_producto]);
             ?>
@@ -130,7 +130,7 @@ include ("../config/sesiones.php");
         </div>
       </section>
       <!--Incluyo el Footer con informaciones pertinentes a la empresa haciendo un include de un archivo externo-->
-      <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/vista/footer.php"); ?>
+      <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/vista/footer.php"); ?>
     </div>
     <script>
       /** Función que se ejecuta una vez cargada la página */

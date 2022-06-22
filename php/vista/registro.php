@@ -1,6 +1,6 @@
 <?php
   ob_start();
-  require_once($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/PHPMailer-master/mail_Informacion.php");
+  require_once($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/PHPMailer-master/mail_Informacion.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,7 @@
     <title>Registro de usuario</title>
   </head>
   <body>
-  <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/controlador/header.php"); ?>
+  <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/controlador/header.php"); ?>
     <!--Formulario de registro en la aplicación -->
     <h2>Registro</h2>
     <div class="formularioBody">
@@ -35,7 +35,7 @@
         <a href="../controlador/loginUsuario.php">Login</a>
       </form>
     </div>
-    <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/vista/footer.php"); ?>
+    <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/vista/footer.php"); ?>
     <script>
       /** Función que se ejecuta una vez cargada la página */
       window.onload=function() {

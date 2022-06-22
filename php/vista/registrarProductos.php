@@ -13,7 +13,7 @@ include ("../config/sesiones.php");
   </head>
   <body>
     <div class="container">
-      <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/controlador/header.php"); ?>
+      <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/controlador/header.php"); ?>
         <!--Formulario de registro de dirección para envío -->
         <div class="formularioBody">
             <form method="POST" action="../controlador/registrarProductos.php">
@@ -36,7 +36,7 @@ include ("../config/sesiones.php");
             </form>
         </div>
         <!--Footer con informaciones pertinentes a la empresa-->
-        <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/vista/footer.php"); ?>
+        <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/vista/footer.php"); ?>
     </div>
     <!--Enlace de los archivos JS-->
     <script>

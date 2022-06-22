@@ -1,6 +1,6 @@
 <?php
 include ("php/config/sesiones.php");
-require_once($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/modelo/modeloMetodoPedidos.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/modelo/modeloMetodoPedidos.php");
     $cesta = new modeloPedidos();
     if(isset($_POST['id_producto']) && isset($_POST['cantidad']) && $_POST['cantidad'] != ""){
         $cesta->agregarProductoCesta();
@@ -21,7 +21,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/modelo/mo
   <!--Hago un contenedor para todo el proyecto-->
   <div class="container">
     <!--Incluyo el heder haciendo un include de un archivo externo-->
-  <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/controlador/header.php"); ?>
+  <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/controlador/header.php"); ?>
     <section>
         <!--Un apartado para la portada-->
         <div>
@@ -31,13 +31,13 @@ require_once($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/modelo/mo
           <!--Apartado con productos destacados -->
           <div class="seccion">
             <div class="producto_1">
-              <a href="/dashboard/TiendaOnlineTFG/php/controlador/camisas.php"><img src="img/4416camisa04.jpg" /></a>
+              <a href="/dashboard/TiendaOnline/php/controlador/camisas.php"><img src="img/4416camisa04.jpg" /></a>
             </div>
             <div class="producto_2">
-              <a href="/dashboard/TiendaOnlineTFG/php/controlador/vestidos.php"><img src="img/vestido07.jpg" /></a>
+              <a href="/dashboard/TiendaOnline/php/controlador/vestidos.php"><img src="img/vestido07.jpg" /></a>
             </div>
             <div class="producto_3">
-              <a href="/dashboard/TiendaOnlineTFG/php/controlador/bolsos.php"><img src="img/bolso04.jpg" /></a>
+              <a href="/dashboard/TiendaOnline/php/controlador/bolsos.php"><img src="img/bolso04.jpg" /></a>
             </div>
         </div>
         <div class="informacionBarbara" >
@@ -57,7 +57,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/modelo/mo
       <!--Apartado con productos aleatotorios -->
         <h2>Productos elegidos para ti</h2>
       <section class="productosRandom" >
-          <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/controlador/productosRandom.php"); 
+          <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/controlador/productosRandom.php"); 
             foreach($productosRandom as $dato) {
               $ExisteProductoEnCesta = isset($_SESSION['cesta'][$dato->id_producto]);
           ?>
@@ -111,7 +111,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/modelo/mo
       <div>
       </div>
       <!--Incluyo el Footer con informaciones pertinentes a la empresa haciendo un include de un archivo externo-->
-      <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/vista/footer.php"); ?>
+      <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/vista/footer.php"); ?>
   </div>
   <script>
     /** Función que se ejecuta una vez cargada la página */

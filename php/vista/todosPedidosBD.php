@@ -16,7 +16,7 @@ include ("../config/sesiones.php");
     <body>
         <!--Hago un contenedor para todo el proyecto-->
         <div class="container">
-            <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/controlador/header.php"); ?>
+            <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/controlador/header.php"); ?>
             <div class="contenedorGeneralPedidosBD">
                 <h3>Pedidos</h3>
                 <?php
@@ -65,7 +65,7 @@ include ("../config/sesiones.php");
             </div>
         </div>
         <!--Footer con informaciones pertinentes a la empresa-->
-        <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/vista/footer.php"); ?>
+        <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/vista/footer.php"); ?>
         <!--Enlace de los archivos JS-->
         <script>
         /** Función que se ejecuta una vez cargada la página */

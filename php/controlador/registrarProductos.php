@@ -4,7 +4,7 @@
     require_once("../modelo/modeloMetodoProductos.php");
     //Hago una lógica que si esta logueado y NO es administrador no podrá hacer está función te redirecciona para el index.php
     if($logueado && !$administrador) {
-        header("location:/dashboard/TiendaOnlineTFG/index.php");
+        header("location:/dashboard/TiendaOnline/index.php");
     }//Caso contratio creo un nuevo objeto de tipo modeloProductos();
     $services = new modeloProductos();
     //Hago una lógica caso encuentre $_POST['registrarProductos']

@@ -1,7 +1,7 @@
 <?php
  require_once(__DIR__ ."../../config/conexion.php");
  include ("../config/sesiones.php");
- require_once($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/PHPMailer-master/mail_Informacion.php");
+ require_once($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/PHPMailer-master/mail_Informacion.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +16,7 @@
   </head>
   <body>
     <!--Incluyo el heder haciendo un include de un archivo externo-->
-    <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/controlador/header.php"); ?>
+    <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/controlador/header.php"); ?>
       <div class="contenedorGeneralPass">
         <div class="formularioBodyPass">
           <h2>Introduce el correo electrónico de tu cuenta para restablecer tu contraseña.</h2>
@@ -47,7 +47,7 @@
         }
       ?>
       <!--Incluyo el Footer con informaciones pertinentes a la empresa haciendo un include de un archivo externo-->
-      <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnlineTFG/php/vista/footer.php"); ?>
+      <?php include ($_SERVER['DOCUMENT_ROOT']."/dashboard/TiendaOnline/php/vista/footer.php"); ?>
       <script>
         /** Función que se ejecuta una vez cargada la página */
         window.onload=function() {
